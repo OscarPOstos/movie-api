@@ -1,0 +1,31 @@
+# Node modules  
+node_modules/  
+
+# Entorno y configuración  
+.env  
+
+# Logs  
+npm-debug.log*  
+yarn-debug.log*  
+yarn-error.log*  
+logs/  
+*.log  
+
+# Caché de dependencias  
+package-lock.json  
+yarn.lock  
+
+# Salida de compilación  
+dist/  
+build/  
+
+# Archivos del sistema  
+.DS_Store  
+Thumbs.db  
+
+# Archivos de debugging  
+*.swp  
+*.swo
+
+# https
+*.http
