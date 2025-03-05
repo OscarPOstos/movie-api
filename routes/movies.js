@@ -7,11 +7,13 @@ const {
   getUpcomingMovies,
   searchMovies,
   getMovieById,
+  getRecommendations
 } = require("../controllers/movieController");
 
 const { authMiddleware } = require("../controllers/authController"); // Importar middleware de autenticación
 
 // Proteger todas las rutas de películas con authMiddleware
+router.get("/recommendations", authMiddleware, getRecommendations);
 router.get("/popular", authMiddleware, getPopularMovies);
 router.get("/top-rated", authMiddleware, getTopRatedMovies);
 router.get("/upcoming", authMiddleware, getUpcomingMovies);
